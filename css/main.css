@@ -9,12 +9,12 @@
 }
 
 :root {
-    --color-background: #fffdf7;
-    --color-black: #212121;
-    --color-black-heavy: #000000;
-    --color-text: #4f4f4f;
-    --color-text-out: #90908e;
-    --color-primary: #ffbf00;
+    --color-background: #000000;
+    --color-black: #000000;
+    --color-black-heavy: #ffffff;
+    --color-text: #e9e9e9;
+    --color-text-out: #ffffff;
+    --color-primary: #ff0000;
     --color-secondary: #fff2cc;
     --color-white: #ffffff;
     --color-red: #e74c3c;
@@ -46,14 +46,22 @@ a.navbar-brand {
 }
 
 .nav-link {
-    color: var(--color-black)!important;
+    color: var(--color-white)!important;
     padding-left: 35px!important;
     padding-right: 35px!important;
 }
 
+.nav-link:hover {
+    color: var(--color-primary)!important;
+} 
+
+.fa-shopping-bag{
+    color: var(--color-white)!important;
+}
+
 .btn-white {
     background-color: var(--color-white);
-    color: var(--color-black)!important;
+    color: var(--color-primary)!important;
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
@@ -62,6 +70,7 @@ a.navbar-brand {
 
 .btn-white.active, .btn-white:hover {
     background-color: var(--color-primary);
+    color: var(--color-white)!important;
 }
 
 .btn-icon {
@@ -94,7 +103,7 @@ a.navbar-brand {
 }
 
 .text-banner h1 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 60px;
 }
 
@@ -145,7 +154,7 @@ a.navbar-brand {
     height: 450px;
     width: 450px;
     border-radius: 170px;
-    background-color: #f4c949;
+    background-color: #ff0000;
     position: absolute;
     right: 0;
     top: -80px;
@@ -182,13 +191,17 @@ a.navbar-brand {
     bottom: 10px;
 }
 
+#text-card-case-banner {
+    color: var(--color-black);
+}
+
 .servicos {
     padding-top: 100px;
     padding-bottom: 150px;
 }
 
 .hint-title {
-    color: var(--color-primary);
+    color: var(--color-white);
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -406,7 +419,7 @@ a.navbar-brand {
 .texto-depoimento {
     display: flex;
     font-size: 16px;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 .texto-depoimento i {
@@ -431,8 +444,20 @@ a.navbar-brand {
     padding-bottom: 150px;
 }
 
+.hint-title-reserva {
+    color: var(--color-black);
+}
+
+.title-reserva {
+    color: var(--color-primary);
+}
+
+.pr-5-reserva {
+    color: var(--color-black);
+}
+
 .card-secondary {
-    background-color: var(--color-secondary);
+    background-color: var(--color-white);
     border-radius: 70px;
     padding: 90px;
 }
@@ -452,7 +477,7 @@ a.navbar-brand {
 }
 
 footer {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 .logo-footer {

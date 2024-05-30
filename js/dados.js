@@ -2,179 +2,152 @@ var MENU = {
     "churrasco": [
         {
             "id": "ribs-brisket-and-burnt-ends",
-            "img": "./img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+            "img": "./img/cardapio/bebidas/pngwing.com.png",
             "name": "Joe's KC BBQ",
             "dsc": "Joe's KC Ribs, Brisket & Burnt Ends",
-            "price": 110.99
+            "price": 6.50
         },
         {
             "id": "005-kings-carolina-oink-sampler",
-            "img": "./img/cardapio/churrasco/carolina-bbq-oink-sampler.1340b5a10cedc238cb2280306dd1d5a5.jpg",
-            "name": "Kings BBQ",
+            "img": "./img/cardapio/bebidas/177937-thickbox_default.jpg",
+            "name": "Budweiser 300 ml",
             "dsc": "Carolina BBQ Oink Sampler",
-            "price": 89
+            "price": 4.50
         },
         {
             "id": "texas-monthlys-1-bbq-brisket",
-            "img": "./img/cardapio/churrasco/texas-monthlys-1-bbq-brisket.1006a061be7acae03992e420fbca995a.jpg",
-            "name": "Snow's BBQ",
+            "img": "./img/cardapio/bebidas/original1-325c186a65e3a6217f15876051852122-480-0.jpg",
+            "name": "Original 300 ml",
             "dsc": "Texas Monthly's #1 BBQ Brisket",
-            "price": 199
+            "price": 4
         },
         {
             "id": "whole-brisket-texas-bbq-sauce",
-            "img": "./img/cardapio/churrasco/whole-brisket-texas-barbecue-bbq-sauce.e07ee4818b20ed43d217bf67fedd41ce.jpg",
-            "name": "Franklin Barbecue",
+            "img": "./img/cardapio/bebidas/2752ea2f-2b59-4546-b043-5014462c707f.jpg",
+            "name": "Skol 300 ml",
             "dsc": "Whole Brisket + Texas Barbecue BBQ Sauce",
-            "price": 249
+            "price": 4
         },
         {
             "id": "whole-texas-smoked-brisket",
-            "img": "./img/cardapio/churrasco/whole-texas-smoked-brisket.a5558a25381e271408e197936e7985d8.jpg",
-            "name": "Terry Black's Barbecue",
+            "img": "./img/cardapio/bebidas/7049_barcelos_cerveja-pilsen_cerveja-pilsen-antarctica-300ml-retornavel.jpg",
+            "name": "Antártica Boa 300 ml",
             "dsc": "Whole Texas Smoked Brisket",
-            "price": 189
+            "price": 4
         },
         {
             "id": "mini-trinity-bbq-combo-brisket-ribs-and-links",
-            "img": "./img/cardapio/churrasco/mini-trinity-bbq-combo-brisket-ribs-and-links.245582f593bf64b23b57dfca2be18cfd.jpg",
-            "name": "Bludso's BBQ",
+            "img": "./img/cardapio/bebidas/spaten_350ml-1--1-.png",
+            "name": "Spaten 600 ml",
             "dsc": "Mini Trinity BBQ Combo - Brisket, Ribs & Links",
-            "price": 139
+            "price": 13
         },
         {
             "id": "235203-blue-smoke-baby-back-ribs-backyard-barbecue-chicken-combo",
-            "img": "./img/cardapio/churrasco/blue-smoke-baby-back-ribs-backyard-barbecue-chicken-combo.a95a3e632ae324f719738a2a5c1dff6e.jpg",
-            "name": "Blue Smoke",
+            "img": "./img/cardapio/bebidas/OIP.jpeg",
+            "name": "Corote Ice",
             "dsc": "Blue Smoke Baby Back Ribs + Backyard Barbecue Chicken Combo",
-            "price": 129
-        },
-        {
-            "id": "006-kings-meat-lovers-special",
-            "img": "./img/cardapio/churrasco/bbq-meat-lovers-special-for-10.36ca670fda4bfa783c2ea9165e068d26.jpg",
-            "name": "Kings BBQ",
-            "dsc": "BBQ Meat Lovers Special for 10",
-            "price": 139
+            "price": 8
         },
         {
             "id": "the-big-ugly-bbq-dinner-for-6",
             "img": "./img/cardapio/churrasco/the-big-ugly-bbq-dinner-for-6.2dfae7818811adddce85cc1a910881a0.jpg",
-            "name": "Ugly Drum",
+            "name": "Doses",
             "dsc": "The Big Ugly BBQ Dinner for 6",
-            "price": 229
+            "price": 4
         },
         {
             "id": "17796-mighty-quinns-bbq-sampler-pack",
             "img": "./img/cardapio/churrasco/mighty-quinns-bbq-sampler-pack.1bfe4a0665edc565756f5241bf25840e.jpg",
-            "name": "Mighty Quinn's BBQ",
+            "name": "Vermelho Tonic 220 ml",
             "dsc": "Mighty Quinn's BBQ Sampler Pack",
-            "price": 169
+            "price": 5
         },
         {
             "id": "post-oak-smoked-half-brisket",
             "img": "./img/cardapio/churrasco/post-oak-smoked-usda-prime-half-brisket.6f17178dde7d806670bcc73ff11762b3.jpg",
-            "name": "Southside Market & Barbeque",
+            "name": "Dose Para tudo",
             "dsc": "Post Oak Smoked USDA Prime Half Brisket",
-            "price": 109
+            "price": 4
         },
         {
             "id": "best-of-texas-bbq-combo-serves-14",
             "img": "./img/cardapio/churrasco/best-of-texas-bbq-combo-serves-14.7ae90266335e539c67e77fed14b43029.jpg",
-            "name": "Snow's BBQ",
+            "name": "Dose Pracura",
             "dsc": "Best of Texas BBQ Combo - Serves 14",
-            "price": 269
+            "price": 4
+        },
+        {
+            "id": "best-of-texas-bbq-combo-serves-14",
+            "img": "./img/cardapio/churrasco/best-of-texas-bbq-combo-serves-14.7ae90266335e539c67e77fed14b43029.jpg",
+            "name": "Dose Velho Barreiro",
+            "dsc": "Best of Texas BBQ Combo - Serves 14",
+            "price": 4
+        },
+        {
+            "id": "best-of-texas-bbq-combo-serves-14",
+            "img": "./img/cardapio/churrasco/best-of-texas-bbq-combo-serves-14.7ae90266335e539c67e77fed14b43029.jpg",
+            "name": "Dose Pirassununga 61",
+            "dsc": "Best of Texas BBQ Combo - Serves 14",
+            "price": 4
         }
     ],
     "burgers": [
         {
             "id": "the-gramercy-tavern-burger-4-pack",
             "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
-            "name": "Gramercy Tavern",
+            "name": "Carne",
             "dsc": "The Gramercy Tavern Burger - 4 Pack",
-            "price": 99
+            "price": 8
         },
         {
             "id": "shake-shack-shackburger-8-pack",
-            "img": "./img/cardapio/burguers/shake-shack-shackburger-8-pack.973a5e26836ea86d7e86a327becea2b0.jpg",
-            "name": "Shake Shack",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "name": "Panceta",
             "dsc": "Shake Shack ShackBurger® - 8 Pack",
-            "price": 49
+            "price": 8
         },
         {
             "id": "gotts-cheeseburger-kit-for-4",
-            "img": "./img/cardapio/burguers/gotts-complete-cheeseburger-kit-for-4.7bdc74104b193427b3fe6eae39e05b5e.jpg",
-            "name": "Gott's Roadside",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "name": "Queijo",
             "dsc": "Gott's Complete Cheeseburger Kit for 4",
-            "price": 99
+            "price": 7
         },
         {
             "id": "le-big-matt-kit-for-6",
-            "img": "./img/cardapio/burguers/le-big-matt-kit-for-6.1ddae6e382bb3218eeb0fd5247de115a.jpg",
-            "name": "Emmy Squared",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "name": "Kafta com Queijo",
             "dsc": "Le Big Matt Burger Kit for 6",
-            "price": 99
+            "price": 8
         },
         {
             "id": "shake-shack-shackburger-16-pack",
-            "img": "./img/cardapio/burguers/shake-shack-shackburger-16-pack.316f8b09144db65931ea29e34869287a.jpg",
-            "name": "Shake Shack",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "name": "Medalhão de Frango",
             "dsc": "Shake Shack Shackburger® - 16 Pack",
-            "price": 89
+            "price": 8
         },
         {
             "id": "21-usda-prime-burgers-pack-of-18-8oz-each",
-            "img": "./img/cardapio/burguers/usda-prime-burgers-pack-of-18-8oz-each.274c67f15aa1c0b210dbf51801706670.jpg",
-            "name": "Peter Luger Steak House",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "name": "Coração",
             "dsc": "USDA Prime Burgers - Pack of 18 (8oz each)",
-            "price": 175.95
+            "price": 8
         },
         {
             "id": "double-stack-burger-kit-for-4",
-            "img": "./img/cardapio/burguers/handf-double-stack-burger-kit-for-4.4ee9f54b1d6087e9996335f07c13e5cd.jpg",
-            "name": "Holeman & Finch",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "name": "Pão de Alho",
             "dsc": "Double Stack Burger Kit for 4",
-            "price": 79
+            "price": 5
         },
-        {
-            "id": "goldbelly-burger-bash-pack",
-            "img": "./img/cardapio/burguers/the-burger-bash-package.bd9d12d031865940bbe5faf15f1a62f8.jpg",
-            "name": "Pat LaFrieda Meats",
-            "dsc": "Goldbelly \"Burger Bash\" Pack",
-            "price": 109
-        },
-        {
-            "id": "burger-au-poivre-kit-4-pack",
-            "img": "./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg",
-            "name": "Raoul's",
-            "dsc": "Burger Au Poivre Kit - 4 Pack",
-            "price": 99
-        },
-        {
-            "id": "goldbelly-burger-blend-4-lbs",
-            "img": "./img/cardapio/burguers/goldbelly-burger-blend-1-lb.13a21b66edf7173a59c75c3a6d2f981b.jpg",
-            "name": "Flannery Beef",
-            "dsc": "Goldbelly Burger Blend - 4 lbs.",
-            "price": 79
-        },
-        {
-            "id": "gotts-complete-cheeseburger-kit-for-8",
-            "img": "./img/cardapio/burguers/gotts-complete-cheeseburger-kit-for-8.092aa049d00286fa1733d720decc782e.jpg",
-            "name": "Gott's Roadside",
-            "dsc": "Gott's Complete Cheeseburger Kit for 8",
-            "price": 149
-        },
-        {
-            "id": "gramercy-tavern-burger-kielbasa-combo",
-            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-47.jpg",
-            "name": "Gramercy Tavern",
-            "dsc": "Gramercy Tavern Burger + Kielbasa Combo",
-            "price": 149
-        }
+        
     ],
     "sobremesas": [
         {
             "id": "15259-german-chocolate-killer-brownie-tin-pack",
-            "img": "./img/cardapio/sobremesas/german-chocolate-killer-brownie-tin-pack.5ebc34160f28767a9d94c4da2e04c4b9.jpg",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
             "name": "Killer Brownie®",
             "dsc": "German Chocolate Killer Brownie®",
             "price": 39.99
@@ -260,14 +233,14 @@ var MENU = {
     "bebidas": [
         {
             "id": "hong-kong-boba-tea-kit-for-6",
-            "img": "./img/cardapio/bebidas/hong-kong-boba-tea-kit-for-6.63841de36d8e5edfafa13023fc303285.jpg",
+            "img": "./img/cardapio/bebidas/pngwing.com.png",
             "name": "New Territories",
             "dsc": "Hong Kong Boba Tea Kit for 6",
             "price": 59
         },
         {
             "id": "guys-caliente-margaritas-for-12",
-            "img": "./img/cardapio/bebidas/guys-caliente-margaritas-for-12.ca8c6bc06b8f1039549385ffcebc749d.jpg",
+            "img": "./img/cardapio/bebidas/177937-thickbox_default.jpg",
             "name": "Guy Fieri",
             "dsc": "Guy's Caliente Margaritas for 12",
             "price": 69
@@ -346,103 +319,48 @@ var MENU = {
     "pizzas": [
         {
             "id": "2-lou-malnatis-deep-dish-pizzas",
-            "img": "./img/cardapio/pizzas/2-lou-malnatis-deep-dish-pizzas.bf0fe065d251a9cca3925b269d443a27.jpg",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
             "name": "Lou Malnati's Pizza",
             "dsc": "2 Lou Malnati's Deep Dish Pizzas",
-            "price": 67.99
+            "price": 10
         },
         {
             "id": "23699-choose-your-own-thin-crust-pizza-4-pack",
-            "img": "./img/cardapio/pizzas/choose-your-own-thin-crust-pizza-4-pack.b928a2008eab50c65dc87e59b5952190.jpg",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
             "name": "Bartolini's",
             "dsc": "Choose Your Own Thin Crust Pizza - 4 Pack",
-            "price": 139
+            "price": 10
         },
         {
             "id": "choose-your-own-new-haven-style-pizza-6-pack",
-            "img": "./img/cardapio/pizzas/choose-your-own-new-haven-style-pizza-6-pack.ab82828afc6172cdd4017556c15e36dd.jpg",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
             "name": "Zuppardi's Apizza",
             "dsc": "New Haven-Style Pizza - 6 Pack (Choose Your Own)",
-            "price": 79
+            "price": 10
         },
         {
             "id": "6-lou-malnatis-deep-dish-pizzas",
-            "img": "./img/cardapio/pizzas/6-lou-malnatis-deep-dish-pizzas.f59993181da5d295668c8a6fb856055e.jpg",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
             "name": "Lou Malnati's Pizza",
             "dsc": "6 Lou Malnati's Deep Dish Pizzas",
-            "price": 116.99
+            "price": 10
         },
-        {
-            "id": "wood-fired-pizzas-best-seller-4-pack",
-            "img": "./img/cardapio/pizzas/wood-fired-pizzas-best-seller-4-pack.1653bb05922ba153ac178f8365d27f6d.jpg",
-            "name": "Pizzeria Bianco",
-            "dsc": "Wood Fired Pizzas Best Seller - 4 Pack",
-            "price": 129
-        },
-        {
-            "id": "236991-choose-your-own-deep-dish-pizza-3-pack",
-            "img": "./img/cardapio/pizzas/choose-your-own-deep-dish-pizza-3-pack.4111791511244a4946bb5c9ad2c17da9.jpg",
-            "name": "Bartolini's",
-            "dsc": "Choose Your Own Deep Dish Pizza - 3 Pack",
-            "price": 139
-        },
-        {
-            "id": "choose-your-own-detroit-style-pizza-3-pack",
-            "img": "./img/cardapio/pizzas/detroit-style-pizza-choose-your-own-3-pack.6b6f4909ffd4066d5471e70eac5c3d89.jpg",
-            "name": "Emmy Squared",
-            "dsc": "Detroit-Style Pizza - Choose Your Own 3 Pack",
-            "price": 89
-        },
-        {
-            "id": "brooklyn-pizza-choose-your-own-5-pack",
-            "img": "./img/cardapio/pizzas/brooklyn-pizza-choose-your-own-5-pack.edc4f476a75207d0af840ce6f225f2b3.jpg",
-            "name": "Paesan's Pizza",
-            "dsc": "Brooklyn Pizza - Choose Your Own 5 Pack",
-            "price": 69
-        },
-        {
-            "id": "choose-your-own-chicago-deep-dish-pizza-4-pack",
-            "img": "./img/cardapio/pizzas/chicago-deep-dish-pizza-4-pack.49927daafa8c147fe9bb2a113e56668e.jpg",
-            "name": "My Pi Pizza",
-            "dsc": "Chicago Deep Dish Pizza - 4 Pack",
-            "price": 129
-        },
-        {
-            "id": "4-lou-malnatis-deep-dish-pizzas",
-            "img": "./img/cardapio/pizzas/4-lou-malnatis-deep-dish-pizzas.8c79eb7506b5752ab3387d8174246b17.jpg",
-            "name": "Lou Malnati's Pizza",
-            "dsc": "4 Lou Malnati's Deep Dish Pizzas",
-            "price": 96.99
-        },
-        {
-            "id": "tonys-custom-pizza-3-pack",
-            "img": "./img/cardapio/pizzas/choose-your-own-pizza-3-pack.fcf7a43e38593007ef2857fe16d6dd26.jpg",
-            "name": "Tony's Pizza Napoletana",
-            "dsc": "Choose Your Own Pizza - 3 Pack",
-            "price": 99
-        },
-        {
-            "id": "plain-thin-crust-pizza-4-pack",
-            "img": "./img/cardapio/pizzas/plain-thin-crust-pizza-4-pack.5540e9d166db2f0853643c6517e4a225.jpg",
-            "name": "The Columbia Inn",
-            "dsc": "Plain Thin Crust Pizza - 4 Pack",
-            "price": 79
-        }
+       
     ],
     "steaks": [
         {
             "id": "california-reserve-filet-mignon-steaks-gift-box",
-            "img": "./img/cardapio/steaks/california-reserve-filet-mignon-steaks-gift-box.bf226e317aad85f47897ae7e325f790d.jpg",
-            "name": "Flannery Beef",
+            "img": "./img/cardapio/bebidas/pngwing.com.png",
+            "name": "Heineken 350 ml",
             "dsc": "California Reserve Filet Mignon Steaks Gift Box",
-            "price": 129
+            "price": 6.50
         },
         {
             "id": "steaks-and-cakes-date-night-dinner-for-2",
-            "img": "./img/cardapio/steaks/valentines-steaks-and-cakes-dinner-for-2.0c63dab635eed46209455dc33cd25ea8.jpg",
-            "name": "Chesapeake Bay Gourmet",
+            "img": "./img/cardapio/bebidas/177937-thickbox_default.jpg",
+            "name": "Budweiser 300 ml",
             "dsc": "Steaks and Cakes Date Night Dinner for 2",
-            "price": 129
+            "price": 4.50
         },
         {
             "id": "Prime-holiday-steak-sampler-for-10-12",
