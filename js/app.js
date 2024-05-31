@@ -8,7 +8,7 @@ var MEU_CARRINHO = [];
 var MEU_ENDERECO = null;
 
 var VALOR_CARRINHO = 0;
-var VALOR_ENTREGA = 2;
+var VALOR_ENTREGA = 7.5;
 
 var CELULAR_EMPRESA = '5516992924468';
 
@@ -396,126 +396,126 @@ cardapio.metodos = {
     },
 
     // validação antes de prosseguir para a etapa 3
-resumoPedido: () => {
+    resumoPedido: () => {
 
-    let cep = $("#txtCEP").val().trim();
-    let endereco = $("#txtEndereco").val().trim();
-    let bairro = $("#txtBairro").val().trim();
-    let cidade = $("#txtCidade").val().trim();
-    let uf = $("#ddlUf").val().trim();
-    let numero = $("#txtNumero").val().trim();
-    let complemento = $("#txtComplemento").val().trim();
+        let cep = $("#txtCEP").val().trim();
+        let endereco = $("#txtEndereco").val().trim();
+        let bairro = $("#txtBairro").val().trim();
+        let cidade = $("#txtCidade").val().trim();
+        let uf = $("#ddlUf").val().trim();
+        let numero = $("#txtNumero").val().trim();
+        let complemento = $("#txtComplemento").val().trim();
 
-    if (endereco.length <= 0) {
-        cardapio.metodos.mensagem('Informe o Endereço, por favor.');
-        $("#txtEndereco").focus();
-        return;
-    }
+        if (cep.length <= 0) {
+            cardapio.metodos.mensagem('Informe o CEP, por favor.');
+            $("#txtCEP").focus();
+            return;
+        }
 
-    if (bairro.length <= 0) {
-        cardapio.metodos.mensagem('Informe o Bairro, por favor.');
-        $("#txtBairro").focus();
-        return;
-    }
+        if (endereco.length <= 0) {
+            cardapio.metodos.mensagem('Informe o Endereço, por favor.');
+            $("#txtEndereco").focus();
+            return;
+        }
 
-    if (cidade.length <= 0) {
-        cardapio.metodos.mensagem('Informe a Cidade, por favor.');
-        $("#txtCidade").focus();
-        return;
-    }
+        if (bairro.length <= 0) {
+            cardapio.metodos.mensagem('Informe o Bairro, por favor.');
+            $("#txtBairro").focus();
+            return;
+        }
 
-    if (numero.length <= 0) {
-        cardapio.metodos.mensagem('Informe o Número, por favor.');
-        $("#txtNumero").focus();
-        return;
-    }
+        if (cidade.length <= 0) {
+            cardapio.metodos.mensagem('Informe a Cidade, por favor.');
+            $("#txtCidade").focus();
+            return;
+        }
 
-    MEU_ENDERECO = {
-        cep: cep,
-        endereco: endereco,
-        bairro: bairro,
-        cidade: cidade,
-        uf: uf,
-        numero: numero,
-        complemento: complemento
-    }
+        if (uf == "-1") {
+            cardapio.metodos.mensagem('Informe a UF, por favor.');
+            $("#ddlUf").focus();
+            return;
+        }
 
-    cardapio.metodos.carregarEtapa(3);
-    cardapio.metodos.carregarResumo();
-},
+        if (numero.length <= 0) {
+            cardapio.metodos.mensagem('Informe o Número, por favor.');
+            $("#txtNumero").focus();
+            return;
+        }
 
-// carrega a etapa de Resumo do pedido
-carregarResumo: () => {
+        MEU_ENDERECO = {
+            cep: cep,
+            endereco: endereco,
+            bairro: bairro,
+            cidade: cidade,
+            uf: uf,
+            numero: numero,
+            complemento: complemento
+        }
 
-    $("#listaItensResumo").html('');
+        cardapio.metodos.carregarEtapa(3);
+        cardapio.metodos.carregarResumo();
 
-    $.each(MEU_CARRINHO, (i, e) => {
+    },
 
-        let temp = cardapio.templates.itemResumo.replace(/\${img}/g, e.img)
-            .replace(/\${nome}/g, e.name)
-            .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
-            .replace(/\${qntd}/g, e.qntd)
+    // carrega a etapa de Resumo do pedido
+    carregarResumo: () => {
 
-        $("#listaItensResumo").append(temp);
-
-    });
-
-    let enderecoCompleto = `${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
-    let cidadeUfCep = `${MEU_ENDERECO.cidade}`;
-    
-    if (MEU_ENDERECO.uf) {
-        cidadeUfCep += `-${MEU_ENDERECO.uf}`;
-    }
-    if (MEU_ENDERECO.cep) {
-        cidadeUfCep += ` / ${MEU_ENDERECO.cep}`;
-    }
-    if (MEU_ENDERECO.complemento) {
-        cidadeUfCep += ` ${MEU_ENDERECO.complemento}`;
-    }
-
-    $("#resumoEndereco").html(enderecoCompleto);
-    $("#cidadeEndereco").html(cidadeUfCep);
-
-    cardapio.metodos.finalizarPedido();
-},
-
-// Atualiza o link do botão do WhatsApp
-finalizarPedido: () => {
-
-    if (MEU_CARRINHO.length > 0 && MEU_ENDERECO != null) {
-
-        var texto = 'Olá! gostaria de fazer um pedido:';
-        texto += `\n*Itens do pedido:*\n\n\${itens}`;
-        texto += '\n*Endereço de entrega:*';
-        texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
-        texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
-        texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}* * Atenção, em casos de entregas em cidades fora Santa Lúcia terá acréscimo no valor de entrega.*`;
-
-        var itens = '';
+        $("#listaItensResumo").html('');
 
         $.each(MEU_CARRINHO, (i, e) => {
 
-            itens += `*${e.qntd}x* ${e.name} ....... R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
+            let temp = cardapio.templates.itemResumo.replace(/\${img}/g, e.img)
+                .replace(/\${nome}/g, e.name)
+                .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
+                .replace(/\${qntd}/g, e.qntd)
 
-            // último item
-            if ((i + 1) == MEU_CARRINHO.length) {
+            $("#listaItensResumo").append(temp);
 
-                texto = texto.replace(/\${itens}/g, itens);
+        });
 
-                // converte a URL
-                let encode = encodeURI(texto);
-                let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+        $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
+        $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`);
 
-                $("#btnEtapaResumo").attr('href', URL);
+        cardapio.metodos.finalizarPedido();
 
-            }
+    },
 
-        })
+    // Atualiza o link do botão do WhatsApp
+    finalizarPedido: () => {
 
-    }
+        if (MEU_CARRINHO.length > 0 && MEU_ENDERECO != null) {
 
-},
+            var texto = 'Olá! gostaria de fazer um pedido:';
+            texto += `\n*Itens do pedido:*\n\n\${itens}`;
+            texto += '\n*Endereço de entrega:*';
+            texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
+            texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
+            texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
 
+            var itens = '';
+
+            $.each(MEU_CARRINHO, (i, e) => {
+
+                itens += `*${e.qntd}x* ${e.name} ....... R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
+
+                // último item
+                if ((i + 1) == MEU_CARRINHO.length) {
+
+                    texto = texto.replace(/\${itens}/g, itens);
+
+                    // converte a URL
+                    let encode = encodeURI(texto);
+                    let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+
+                    $("#btnEtapaResumo").attr('href', URL);
+
+                }
+
+            })
+
+        }
+
+    },
 
     // carrega o link do botão reserva
     carregarBotaoReserva: () => {
