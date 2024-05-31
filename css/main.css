@@ -56,7 +56,7 @@ a.navbar-brand {
 } 
 
 .fa-shopping-bag{
-    color: var(--color-white)!important;
+    color: var(--color-black)!important;
 }
 
 .btn-white {
@@ -80,7 +80,7 @@ a.navbar-brand {
 .btn-icon .icon {
     display: inline-block;
     color: var(--color-black);
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     width: 45px;
     height: 45px;
     position: absolute;
@@ -735,7 +735,7 @@ select.form-control {
     width: 25px;
     height: 25px;
     position: absolute;
-    background-color: var(--color-secondary);
+    background-color: var(--color-red);
     border-radius: 50px;
     right: -5px;
     top: -5px;
@@ -752,7 +752,7 @@ select.form-control {
     bottom: 50px;
     height: 50px;
     width: 50px;
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;

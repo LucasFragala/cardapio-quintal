@@ -3466,7 +3466,8 @@ readers do not read off random characters that represent icons */
   content: "\e057"; }
 
 .fa-shopping-bag:before {
-  content: "\f290"; }
+  content: "\f290";
+  color: red; }
 
 .fa-shopping-basket:before {
   content: "\f291"; }
