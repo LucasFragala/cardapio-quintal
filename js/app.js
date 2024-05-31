@@ -8,7 +8,7 @@ var MEU_CARRINHO = [];
 var MEU_ENDERECO = null;
 
 var VALOR_CARRINHO = 0;
-var VALOR_ENTREGA = 7.5;
+var VALOR_ENTREGA = 2;
 
 var CELULAR_EMPRESA = '5516992924468';
 
@@ -489,7 +489,7 @@ finalizarPedido: () => {
         texto += '\n*Endereço de entrega:*';
         texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
         texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
-        texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
+        texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}* * Atenção, em casos de entregas em cidades fora Santa Lúcia terá acréscimo no valor de entrega.*`;
 
         var itens = '';
 
